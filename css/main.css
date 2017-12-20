@@ -18,92 +18,54 @@ html {
 }
 
 body {
-  margin: 0;
+  text-align: center;
 }
 
-@media only screen and (min-width: 20em) {
+img:nth-child(1),
+img:nth-child(3) {
+  display: inline-block;
+  width: 100%;
+}
 
-  img:first-child {
-    display: inline-block;
-    width: 100%;
-  }
-
-  img:nth-child(2) {
-    display: none;
-  }
-
-  img:nth-last-child(2) {
-    display: inline-block;
-    width: 100%
-  }
-
-  img:last-child {
-    display: none;
-  }
+img:nth-child(2),
+img:nth-child(4) {
+  display: none;
 }
 
 @media only screen and (min-width: 25em) {
 
-  img:first-child {
+  img:nth-child(1),
+  img:nth-child(2),
+  img:nth-child(3),
+  img:nth-child(4) {
     display: inline-block;
-    float: left;
-    width: 50%;
+    width: 49%;
   }
-
-  img:nth-child(2) {
-    display: inline-block;
-    float: right;
-    width: 50%
-  }
-
-  img:nth-last-child(2) {
-    display: inline-block;
-    clear:left;
-    float:left;
-    width: 50%
-  }
-
-  img:last-child {
-    display: inline-block;
-    clear: right;
-    float: right;
-    width: 50%;
-  }
-
 }
 
 @media only screen and (min-width: 38em) {
 
-  img:first-child {
-    display: none
+  img:nth-child(2),
+  img:nth-child(3),
+  img:nth-child(4) {
+    display: inline-block;
+    width: 31%;
   }
 
-  img:nth-child(2) {
-    display: inline-block;
-    float: none;
-    width: 33.3333%;
-  }
-
-  img:nth-last-child(2) {
-    display: inline-block;
-    float: none;
-    width: 33.3333%;
-  }
-
-  img:last-child {
-    display: inline-block;
-    float: none;
-    width: 33.3333%;
+  img:nth-child(1) {
+    display: none;
   }
 
 }
 
 @media only screen and (min-width: 60em) {
 
-  img {
+  img:nth-child(1),
+  img:nth-child(2),
+  img:nth-child(3),
+  img:nth-child(4) {
     display: inline-block;
-    float: none;
-    width: 25%;
+    width: 24.1%;
   }
 
 }
